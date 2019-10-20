@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>File Metadata Microservice</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <body class="text-center">
+            <header>
+                <h1>File Metadata Microservice</h1>
+                <hr>
+            </header>
+            <main>
+                <h3 class="font-weight-bold">Project Usage</h3>
+                <p class="font-weight-bold text-muted">
+                    Use the below form to upload a file and receive its relevant
+                    metadata in JSON form.<br> The data provided includes the file's 
+                    original name, mimetype, encoding and size. 
+                </p>
+                <br>
+                <br>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="upfile">Select a file</label>
+                        <input type="file" id="file" name="upfile" class="form-control w-50 mx-auto"/>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    </div>
+                </form>
+            </main>
+            <hr>
+            <footer>
+                <h6>The code for this project is available on
+                        <a href="https://github.com/CharlesMarlow/file-metadata-microservice" target="blank">Github</a>
+                </h6>
+            </footer>
+        </body>
+    </head>
+</html>
